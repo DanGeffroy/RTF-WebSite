@@ -16,8 +16,14 @@ font-family: 'Cuprum', sans-serif;
 
 }
 .qui{
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 20%;
+  margin-right: 20%;
+padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  background-color: white;
+    border-radius:5px;
 }
 .qui p{
   text-align: justify;
@@ -29,9 +35,9 @@ font-family: 'Cuprum', sans-serif;
   height:50px;
   width:50%;
   border-radius:3px;
-  border:rgba(24,149,215,1) 0px solid;
+  border: #FF9A89 0px solid;
 
-  background:rgba(24,149,215,1);
+  background:#FF9A89;
   color:#FFF;
   font-weight:bold;
   font-size: 12pt;
@@ -41,10 +47,21 @@ font-family: 'Cuprum', sans-serif;
 }
 
 .button:hover{
-  background:#0875AE;
-  border:#1895D7 2px solid;
+  background:#FF7961;
 
 }
+.gmap{
+  padding-top: 50px;
+  margin-right: 22%;
+  margin-left:22%;
+}
+.gmap iframe{
+  width: 70%;
+}
+.gmap p{
+  float: right;
+}
+
 footer{
   text-align: center;
 }
