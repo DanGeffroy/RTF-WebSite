@@ -1,70 +1,167 @@
+@import url(https://fonts.googleapis.com/css?family=Cuprum);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
 .logo{
-  width:20%;
+  margin-top: 30px;
+  width:15%;
+}
+body{
+  background-color: #FFEDED;
+  text-align: center;
+font-family: 'Cuprum', sans-serif;
 }
 .container{
   text-align: center;
+  display: inline-block;
+
+}
+.qui{
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.qui p{
+  text-align: justify;
+}
+.qui h1{
+  text-align: justify;
+}
+.button{
+  height:50px;
+  width:50%;
+  border-radius:3px;
+  border:rgba(24,149,215,1) 0px solid;
+
+  background:rgba(24,149,215,1);
+  color:#FFF;
+  font-weight:bold;
+  font-size: 12pt;
+  transition:background .4s;
+  cursor:pointer;
+
+}
+
+.button:hover{
+  background:#0875AE;
+  border:#1895D7 2px solid;
+
 }
 footer{
   text-align: center;
 }
-
-
+footer a{
+  color: red;
+}
 .images{
-  padding-top: 15px;
-  border-radius:5px;
-  text-align: center;
-  margin-left: 7%;
-  margin-right: 7%;
-  padding-left: 5px;
-  padding-right :5px;
+  margin-left: auto;
+margin-right: auto;
+width: 1100px;
+}
+.view {
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+  /*  float: left;*/
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+  /*  background: #fff url(../images/bgimg.jpg) no-repeat center center*/
+}
+.view .mask, .view .content {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+  width: 500px;
+  height: 300px;
+    display: block;
+    position: relative
+}
+.view h2 {
+  font-family: 'Pacifico', cursive;
 
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 30px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.view p {
+    font-family: 'Slabo 27px', serif;
 
-  overflow: hidden;
-  margin : 2px;
-  display: inline-block;
-  position:relative
+    font-size: 17px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
 }
-.tourImg{
-  background-color: white;
-  display: inline-block;
-  overflow: hidden;
-  position:relative;
-  margin :10px;
-  padding-bottom: 50px;
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
 
-  -webkit-box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.57);
-  box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.57);
-  text-align: justify;
+.view-second img {
+	transition: all 0.2s ease-in;
 }
-
-span{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  opacity: 0;
-  color:white;
-  
-  -moz-transition: all 0.4s ease-in-out 0s;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -o-transition: all 0.4s ease-in-out 0s;
-  -ms-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
-  background-color: rgba(0, 0, 0, 0.5);
-
+.view-second .mask {
+	background-color: rgba(115,146,184, 0.7);
+	width: 500px;
+    padding: 60px;
+	height: 500px;
+	opacity: 0;
+	transform: translate(265px, 145px) rotate(45deg);
+	transition: all 0.2s ease-in-out;
 }
-span:hover{
-  opacity: 1;
+.view-second h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: translate(300px, -300px);
+	transition: all 0.2s ease-in-out;
 }
-.image {
-  margin: 10px;
-  background-color: white;
-  overflow: hidden;
-  position:relative;
+.view-second p {
+	transform: translate(-300px, 300px);
+	transition: all 0.2s ease-in-out;
 }
-.imgSizeLon2{
-  width: 400px;
+.view-second a.info {
+    transform: translate(0px, 150px);
+	transition: all 0.2s 0.1s ease-in-out;
 }
-.imgSizeLar2{
-  height: 400px;
+.view-second:hover .mask {
+	opacity:1;
+	transform: translate(-80px, -145px) rotate(45deg);
+}
+.view-second:hover h2 {
+	transform: translate(0px,0px);
+	transition-delay: 0.3s;
+}
+.view-second:hover p {
+    transform: translate(0px,0px);
+	transition-delay: 0.4s;
+}
+.view-second:hover a.info {
+	transform: translate(0px,0px);
+	transition-delay: 0.5s;
+}
+.droite{
+  float: right;
+}
+.gauche{
+  float: left;
 }
