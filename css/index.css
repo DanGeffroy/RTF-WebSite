@@ -1,12 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Cuprum);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
 .logo{
   margin-top: 30px;
+  margin-bottom: 30px;
   width:15%;
 }
 body{
-  background-color: #FFEDED;
+  background-color: #D4FFCE;
   text-align: center;
 font-family: 'Cuprum', sans-serif;
 }
@@ -24,6 +26,10 @@ padding-right: 25px;
   padding-bottom: 25px;
   background-color: white;
     border-radius:5px;
+
+  -webkit-box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.57);
+  box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.57);
 }
 .qui p{
   text-align: justify;
@@ -54,12 +60,20 @@ padding-right: 25px;
   padding-top: 50px;
   margin-right: 22%;
   margin-left:22%;
+
 }
 .gmap iframe{
   width: 70%;
+
+  -webkit-box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.57);
+  box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.57);
 }
 .gmap p{
   float: right;
+}
+.gmap h1{
+
 }
 
 footer{
@@ -69,6 +83,7 @@ footer a{
   color: red;
 }
 .images{
+  margin-bottom: 30px;
   margin-left: auto;
 margin-right: auto;
 width: 1100px;
@@ -84,6 +99,10 @@ width: 1100px;
     text-align: center;
     box-shadow: 1px 1px 2px #e6e6e6;
     cursor: default;
+
+  -webkit-box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.57);
+  box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.57);
   /*  background: #fff url(../images/bgimg.jpg) no-repeat center center*/
 }
 .view .mask, .view .content {
@@ -137,7 +156,7 @@ width: 1100px;
 	transition: all 0.2s ease-in;
 }
 .view-second .mask {
-	background-color: rgba(115,146,184, 0.7);
+	background-color: rgba(255, 192, 166, 0.7);
 	width: 500px;
     padding: 60px;
 	height: 500px;
